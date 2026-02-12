@@ -57,9 +57,9 @@ export default function ScannerTab({ onClose }: { onClose: () => void }) {
   // Helper to determine "Day 1", "Day 2", etc., if backend sends a raw date
   const getDisplayDay = (dateStr: string) => {
     if (!dateStr) return "Unknown Date";
-    if (dateStr.includes("10/2") || dateStr.includes("10 Feb")) return "Day 1";
-    if (dateStr.includes("11/2") || dateStr.includes("11 Feb")) return "Day 2";
-    if (dateStr.includes("12/2") || dateStr.includes("12 Feb")) return "Day 3";
+    if (dateStr.includes("12/2") || dateStr.includes("10 Feb")) return "Day 1";
+    if (dateStr.includes("13/2") || dateStr.includes("11 Feb")) return "Day 2";
+    if (dateStr.includes("14/2") || dateStr.includes("12 Feb")) return "Day 3";
     return dateStr;
   };
 
